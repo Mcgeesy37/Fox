@@ -2,382 +2,304 @@
 
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Andreas Fuchs — Zeitgenössische Kunst</title>
-
-  <!-- Fonts -->
-
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet"/>
-
-  <!-- Styles -->
-
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-  <!-- ── CUSTOM CURSOR ── -->
+<!-- CURSOR -->
 
-  <div id="cursor">
-    <div class="cursor-dot"></div>
-    <div class="cursor-ring"></div>
+<div id="cursor"><div class="cursor-dot"></div><div class="cursor-ring"></div></div>
+
+<!-- ══════════ HEADER ══════════ -->
+
+<header>
+  <a class="logo" href="#">FUCHS<span>.</span></a>
+  <nav>
+    <a href="#exhibitions">Ausstellungen</a>
+    <a href="#about">Über</a>
+    <a href="#timeline">Chronik</a>
+    <a href="mailto:studio@andreasfuchs.art">Kontakt</a>
+  </nav>
+</header>
+
+<!-- ══════════ HERO ══════════ -->
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-ring ring-a"></div>
+  <div class="hero-ring ring-b"></div>
+  <div class="hero-ring ring-c"></div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">Zeitgenössische Kunst · Berlin</p>
+    <h1 class="hero-title glitch" data-text="ANDREAS FUCHS">
+      ANDREAS
+      <em>Fuchs</em>
+      FUCHS
+    </h1>
+    <p class="hero-sub">Malerei, Installation und Raum —<br>Werke, die zwischen Stille und Störung oszillieren.</p>
+    <a class="hero-cta" href="#exhibitions">Ausstellungen entdecken <span class="line"></span></a>
   </div>
+</section>
 
-  <!-- ══════════════════════════════════════
-       HEADER
-  ═══════════════════════════════════════ -->
+<!-- ══════════ MARQUEE ══════════ -->
 
-  <header>
-    <a class="logo" href="#">FUCHS<span>.</span></a>
-    <nav>
-      <a href="#exhibitions">Ausstellungen</a>
-      <a href="#about">Über</a>
-      <a href="#timeline">Chronik</a>
-      <a href="mailto:studio@andreasfuchs.art">Kontakt</a>
-    </nav>
-  </header>
-
-  <!-- ══════════════════════════════════════
-       HERO
-  ═══════════════════════════════════════ -->
-
-  <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-ring hero-ring-1"></div>
-    <div class="hero-ring hero-ring-2"></div>
-
-```
-<div class="hero-content">
-  <p class="hero-eyebrow">Zeitgenössische Kunst · Berlin</p>
-
-  <h1 class="hero-title glitch" data-text="ANDREAS FUCHS">
-    ANDREAS
-    <em>Fuchs</em>
-    FUCHS
-  </h1>
-
-  <p class="hero-sub">
-    Malerei, Installation und Raum — Werke, die zwischen<br>
-    Stille und Störung oszillieren.
-  </p>
-
-  <a class="hero-cta" href="#exhibitions">Ausstellungen entdecken</a>
-</div>
-```
-
-  </section>
-
-  <!-- ══════════════════════════════════════
-       MARQUEE BAND
-  ═══════════════════════════════════════ -->
-
-  <div class="marquee-wrap">
-    <div class="marquee-inner">
-      <span>Malerei <b>✦</b> Skulptur <b>✦</b> Installation <b>✦</b> Fotografie <b>✦</b> Video Art <b>✦</b> Mixed Media <b>✦</b> Performance <b>✦</b> Konzeptkunst <b>✦</b></span>
-      <span>Malerei <b>✦</b> Skulptur <b>✦</b> Installation <b>✦</b> Fotografie <b>✦</b> Video Art <b>✦</b> Mixed Media <b>✦</b> Performance <b>✦</b> Konzeptkunst <b>✦</b></span>
-    </div>
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span>Malerei <b>✦</b> Skulptur <b>✦</b> Installation <b>✦</b> Fotografie <b>✦</b> Video Art <b>✦</b> Mixed Media <b>✦</b> Performance <b>✦</b> Konzeptkunst <b>✦</b></span>
+    <span>Malerei <b>✦</b> Skulptur <b>✦</b> Installation <b>✦</b> Fotografie <b>✦</b> Video Art <b>✦</b> Mixed Media <b>✦</b> Performance <b>✦</b> Konzeptkunst <b>✦</b></span>
   </div>
-
-  <!-- ══════════════════════════════════════
-       EXHIBITIONS GRID
-  ═══════════════════════════════════════ -->
-
-  <section class="exhibitions reveal" id="exhibitions">
-
-```
-<div class="exhibitions-header">
-  <div>
-    <div class="section-label">Ausgewählte Ausstellungen</div>
-    <h2 class="exhibitions-title">Werkschau</h2>
-  </div>
-  <p class="exhibitions-count">07 Ausstellungen<br>2018 — 2024</p>
 </div>
 
-<div class="grid">
+<!-- ══════════ EXHIBITIONS ══════════ -->
 
-  <!-- CARD 1 — Feature (7 cols x 2 rows) -->
-  <article class="card">
-    <div class="card-img">
-      <svg class="card-art" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-        <circle cx="300" cy="250" r="180" fill="none" stroke="#b84a2a" stroke-width="0.6" opacity="0.7"/>
-        <circle cx="300" cy="250" r="110" fill="none" stroke="#c9a84c" stroke-width="0.5" opacity="0.5"/>
-        <line x1="0" y1="250" x2="600" y2="250" stroke="#f0ece4" stroke-width="0.3" opacity="0.3"/>
-        <line x1="300" y1="0" x2="300" y2="500" stroke="#f0ece4" stroke-width="0.3" opacity="0.3"/>
-        <polygon points="300,80 490,390 110,390" fill="none" stroke="#b84a2a" stroke-width="0.6" opacity="0.5"/>
-      </svg>
-    </div>
-    <div class="card-overlay">
-      <span class="card-year">2024</span>
-      <h3 class="card-title">Leere, die spricht</h3>
-      <p class="card-location">Hamburger Bahnhof, Berlin</p>
-      <p class="card-desc">Eine immersive Rauminstallation über das Schweigen zwischen Worten — 14 Leinwände, Klang und Pigment.</p>
-      <a class="card-link" href="#">Ausstellung ansehen</a>
-    </div>
-  </article>
+<section id="exhibitions">
 
-  <!-- CARD 2 (5 cols) -->
-  <article class="card">
-    <div class="card-img">
-      <svg class="card-art" viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-        <rect x="60" y="50" width="280" height="180" fill="none" stroke="#c9a84c" stroke-width="0.5" opacity="0.55" transform="rotate(14 200 140)"/>
-        <rect x="100" y="80" width="200" height="130" fill="none" stroke="#b84a2a" stroke-width="0.5" opacity="0.45" transform="rotate(-9 200 140)"/>
-      </svg>
+  <div class="exh-header fade-in">
+    <div>
+      <div class="section-label">Ausgewählte Ausstellungen</div>
+      <h2 class="exh-title">Werkschau</h2>
     </div>
-    <div class="card-overlay">
-      <span class="card-year">2023</span>
-      <h3 class="card-title">Risse im Fundament</h3>
-      <p class="card-location">Kunsthalle Mannheim</p>
-      <p class="card-desc">Großformatige Malerei — Brüche, die das Licht hereinlassen.</p>
-      <a class="card-link" href="#">Ausstellung ansehen</a>
-    </div>
-  </article>
+    <p class="exh-meta">07 Ausstellungen<br>2018 — 2024</p>
+  </div>
 
-  <!-- CARD 3 (5 cols) -->
-  <article class="card">
-    <div class="card-img">
-      <svg class="card-art" viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-        <line x1="0" y1="0" x2="400" y2="280" stroke="#f0ece4" stroke-width="0.4" opacity="0.3"/>
-        <line x1="400" y1="0" x2="0" y2="280" stroke="#f0ece4" stroke-width="0.4" opacity="0.3"/>
-        <circle cx="200" cy="140" r="90" fill="none" stroke="#b84a2a" stroke-width="0.7" opacity="0.65"/>
-        <circle cx="200" cy="140" r="50" fill="none" stroke="#c9a84c" stroke-width="0.4" opacity="0.4"/>
-      </svg>
-    </div>
-    <div class="card-overlay">
-      <span class="card-year">2023</span>
-      <h3 class="card-title">Zwischenraum</h3>
-      <p class="card-location">Galerie König, Berlin</p>
-      <p class="card-desc">Skulpturale Objekte im Dialog mit dem architektonischen Raum.</p>
-      <a class="card-link" href="#">Ausstellung ansehen</a>
-    </div>
-  </article>
-
-  <!-- CARD 4 — Tall (4 cols x 2 rows) -->
-  <article class="card">
-    <div class="card-img">
-      <svg class="card-art" viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-        <line x1="200" y1="0" x2="200" y2="600" stroke="#c9a84c" stroke-width="0.5" opacity="0.5"/>
-        <circle cx="200" cy="180" r="70" fill="none" stroke="#c9a84c" stroke-width="0.6" opacity="0.55"/>
-        <circle cx="200" cy="420" r="100" fill="none" stroke="#b84a2a" stroke-width="0.5" opacity="0.45"/>
-        <line x1="0" y1="300" x2="400" y2="300" stroke="#f0ece4" stroke-width="0.3" opacity="0.2"/>
-      </svg>
-    </div>
-    <div class="card-overlay">
-      <span class="card-year">2022</span>
-      <h3 class="card-title">Vertikale</h3>
-      <p class="card-location">Museum für Neue Kunst, Freiburg</p>
-      <p class="card-desc">Eine Werkgruppe über Schwerkraft und Aufstieg. Öl auf Jute, 8 Teile.</p>
-      <a class="card-link" href="#">Ausstellung ansehen</a>
-    </div>
-  </article>
-
-  <!-- CARD 5 — Wide (8 cols) -->
-  <article class="card">
-    <div class="card-img">
-      <svg class="card-art" viewBox="0 0 800 280" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-        <line x1="0" y1="140" x2="800" y2="140" stroke="#f0ece4" stroke-width="0.3" opacity="0.3"/>
-        <circle cx="180" cy="140" r="105" fill="none" stroke="#b84a2a" stroke-width="0.5" opacity="0.45"/>
-        <circle cx="460" cy="140" r="75"  fill="none" stroke="#c9a84c" stroke-width="0.5" opacity="0.45"/>
-        <circle cx="680" cy="140" r="50"  fill="none" stroke="#f0ece4" stroke-width="0.3" opacity="0.3"/>
-      </svg>
-    </div>
-    <div class="card-overlay">
-      <span class="card-year">2022</span>
-      <h3 class="card-title">Resonanz</h3>
-      <p class="card-location">Schirn Kunsthalle, Frankfurt</p>
-      <p class="card-desc">Sound-Installation und Malerei — akustische Spuren im Raum.</p>
-      <a class="card-link" href="#">Ausstellung ansehen</a>
-    </div>
-  </article>
-
-  <!-- CARD 6 (5 cols) -->
-  <article class="card">
-    <div class="card-img">
-      <svg class="card-art" viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-        <polygon points="200,30 370,260 30,260" fill="none" stroke="#b84a2a" stroke-width="0.7" opacity="0.55"/>
-        <polygon points="200,70 330,240 70,240"  fill="none" stroke="#c9a84c" stroke-width="0.4" opacity="0.35"/>
-      </svg>
-    </div>
-    <div class="card-overlay">
-      <span class="card-year">2020</span>
-      <h3 class="card-title">Sediment</h3>
-      <p class="card-location">Deichtorhallen, Hamburg</p>
-      <p class="card-desc">Schichten aus Pigment, Zeit und Erinnerung.</p>
-      <a class="card-link" href="#">Ausstellung ansehen</a>
-    </div>
-  </article>
-
-  <!-- CARD 7 (7 cols) -->
-  <article class="card">
-    <div class="card-img">
-      <svg class="card-art" viewBox="0 0 700 280" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-        <circle cx="350" cy="140" r="120" fill="none" stroke="#c9a84c" stroke-width="0.6" opacity="0.5"/>
-        <circle cx="350" cy="140" r="60"  fill="none" stroke="#b84a2a" stroke-width="0.8" opacity="0.65"/>
-        <line x1="0" y1="140" x2="700" y2="140" stroke="#f0ece4" stroke-width="0.3" opacity="0.2"/>
-      </svg>
-    </div>
-    <div class="card-overlay">
-      <span class="card-year">2018</span>
-      <h3 class="card-title">Ursprung</h3>
-      <p class="card-location">Galerie Eigen + Art, Leipzig</p>
-      <p class="card-desc">Frühwerke — der Anfang einer langen Erkundung.</p>
-      <a class="card-link" href="#">Ausstellung ansehen</a>
-    </div>
-  </article>
-
-</div><!-- /.grid -->
-```
-
-  </section>
-
-  <!-- ══════════════════════════════════════
-       ABOUT
-  ═══════════════════════════════════════ -->
-
-  <section class="about reveal" id="about">
+  <div class="grid">
 
 ```
-<div class="about-left">
-  <div class="about-portrait">
-    <svg class="about-portrait-svg" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="150" cy="140" r="75" fill="none" stroke="rgba(240,236,228,0.14)" stroke-width="1"/>
-      <circle cx="150" cy="140" r="42" fill="rgba(184,74,42,0.14)"/>
-      <line x1="40" y1="290" x2="260" y2="290" stroke="rgba(240,236,228,0.10)" stroke-width="0.6"/>
-      <text x="150" y="355" text-anchor="middle"
-            font-family="Space Mono, monospace"
-            font-size="11" fill="rgba(240,236,228,0.22)"
-            letter-spacing="4">A.F.</text>
+<!-- 1 — Feature -->
+<article class="card">
+  <svg class="card-art" viewBox="0 0 600 480" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+    <circle cx="300" cy="240" r="190" fill="none" stroke="#c0522e" stroke-width="0.7" opacity="0.65"/>
+    <circle cx="300" cy="240" r="120" fill="none" stroke="#c9a84c" stroke-width="0.5" opacity="0.45"/>
+    <circle cx="300" cy="240" r="55"  fill="rgba(192,82,46,0.08)"/>
+    <line x1="0" y1="240" x2="600" y2="240" stroke="#f0ece4" stroke-width="0.3" opacity="0.25"/>
+    <line x1="300" y1="0"  x2="300" y2="480" stroke="#f0ece4" stroke-width="0.3" opacity="0.25"/>
+    <polygon points="300,70 500,390 100,390" fill="none" stroke="#c0522e" stroke-width="0.6" opacity="0.45"/>
+  </svg>
+  <div class="card-body">
+    <span class="card-year">2024</span>
+    <h3 class="card-title">Leere, die spricht</h3>
+    <p class="card-place">Hamburger Bahnhof, Berlin</p>
+    <p class="card-desc">Immersive Rauminstallation über das Schweigen zwischen Worten — 14 Leinwände, Klang und Pigment.</p>
+    <a class="card-link" href="#">Ausstellung ansehen →</a>
+  </div>
+</article>
+
+<!-- 2 -->
+<article class="card">
+  <svg class="card-art" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+    <rect x="55" y="45" width="290" height="175" fill="none" stroke="#c9a84c" stroke-width="0.5" opacity="0.5" transform="rotate(13 200 133)"/>
+    <rect x="95" y="75" width="210" height="120" fill="none" stroke="#c0522e" stroke-width="0.5" opacity="0.4" transform="rotate(-8 200 133)"/>
+    <circle cx="200" cy="130" r="40" fill="rgba(201,168,76,0.06)"/>
+  </svg>
+  <div class="card-body">
+    <span class="card-year">2023</span>
+    <h3 class="card-title">Risse im Fundament</h3>
+    <p class="card-place">Kunsthalle Mannheim</p>
+    <p class="card-desc">Großformatige Malerei — Brüche, die das Licht hereinlassen.</p>
+    <a class="card-link" href="#">Ausstellung ansehen →</a>
+  </div>
+</article>
+
+<!-- 3 -->
+<article class="card">
+  <svg class="card-art" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+    <line x1="0"   y1="0"   x2="400" y2="260" stroke="#f0ece4" stroke-width="0.4" opacity="0.22"/>
+    <line x1="400" y1="0"   x2="0"   y2="260" stroke="#f0ece4" stroke-width="0.4" opacity="0.22"/>
+    <circle cx="200" cy="130" r="95" fill="none" stroke="#c0522e" stroke-width="0.7" opacity="0.6"/>
+    <circle cx="200" cy="130" r="50" fill="none" stroke="#c9a84c" stroke-width="0.4" opacity="0.35"/>
+  </svg>
+  <div class="card-body">
+    <span class="card-year">2023</span>
+    <h3 class="card-title">Zwischenraum</h3>
+    <p class="card-place">Galerie König, Berlin</p>
+    <p class="card-desc">Skulpturale Objekte im Dialog mit dem architektonischen Raum.</p>
+    <a class="card-link" href="#">Ausstellung ansehen →</a>
+  </div>
+</article>
+
+<!-- 4 — Tall -->
+<article class="card">
+  <svg class="card-art" viewBox="0 0 400 580" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+    <line x1="200" y1="0" x2="200" y2="580" stroke="#c9a84c" stroke-width="0.5" opacity="0.45"/>
+    <circle cx="200" cy="175" r="75" fill="none" stroke="#c9a84c" stroke-width="0.6" opacity="0.5"/>
+    <circle cx="200" cy="415" r="105" fill="none" stroke="#c0522e" stroke-width="0.5" opacity="0.4"/>
+    <line x1="0" y1="290" x2="400" y2="290" stroke="#f0ece4" stroke-width="0.3" opacity="0.18"/>
+  </svg>
+  <div class="card-body">
+    <span class="card-year">2022</span>
+    <h3 class="card-title">Vertikale</h3>
+    <p class="card-place">Museum für Neue Kunst, Freiburg</p>
+    <p class="card-desc">Werkgruppe über Schwerkraft und Aufstieg. Öl auf Jute, 8 Teile.</p>
+    <a class="card-link" href="#">Ausstellung ansehen →</a>
+  </div>
+</article>
+
+<!-- 5 — Wide -->
+<article class="card">
+  <svg class="card-art" viewBox="0 0 800 260" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+    <line x1="0" y1="130" x2="800" y2="130" stroke="#f0ece4" stroke-width="0.3" opacity="0.22"/>
+    <circle cx="170" cy="130" r="110" fill="none" stroke="#c0522e" stroke-width="0.5" opacity="0.4"/>
+    <circle cx="450" cy="130" r="78"  fill="none" stroke="#c9a84c" stroke-width="0.5" opacity="0.4"/>
+    <circle cx="670" cy="130" r="52"  fill="none" stroke="#f0ece4" stroke-width="0.3" opacity="0.25"/>
+  </svg>
+  <div class="card-body">
+    <span class="card-year">2022</span>
+    <h3 class="card-title">Resonanz</h3>
+    <p class="card-place">Schirn Kunsthalle, Frankfurt</p>
+    <p class="card-desc">Sound-Installation und Malerei — akustische Spuren im Raum.</p>
+    <a class="card-link" href="#">Ausstellung ansehen →</a>
+  </div>
+</article>
+
+<!-- 6 -->
+<article class="card">
+  <svg class="card-art" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+    <polygon points="200,25 375,245 25,245" fill="none" stroke="#c0522e" stroke-width="0.7" opacity="0.5"/>
+    <polygon points="200,65 335,228 65,228" fill="none" stroke="#c9a84c" stroke-width="0.4" opacity="0.32"/>
+  </svg>
+  <div class="card-body">
+    <span class="card-year">2020</span>
+    <h3 class="card-title">Sediment</h3>
+    <p class="card-place">Deichtorhallen, Hamburg</p>
+    <p class="card-desc">Schichten aus Pigment, Zeit und Erinnerung.</p>
+    <a class="card-link" href="#">Ausstellung ansehen →</a>
+  </div>
+</article>
+
+<!-- 7 -->
+<article class="card">
+  <svg class="card-art" viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+    <circle cx="350" cy="130" r="125" fill="none" stroke="#c9a84c" stroke-width="0.6" opacity="0.45"/>
+    <circle cx="350" cy="130" r="62"  fill="none" stroke="#c0522e" stroke-width="0.8" opacity="0.6"/>
+    <circle cx="350" cy="130" r="22"  fill="rgba(192,82,46,0.1)"/>
+    <line x1="0" y1="130" x2="700" y2="130" stroke="#f0ece4" stroke-width="0.3" opacity="0.18"/>
+  </svg>
+  <div class="card-body">
+    <span class="card-year">2018</span>
+    <h3 class="card-title">Ursprung</h3>
+    <p class="card-place">Galerie Eigen + Art, Leipzig</p>
+    <p class="card-desc">Erste Einzelausstellung — Frühwerke, der Anfang einer langen Erkundung.</p>
+    <a class="card-link" href="#">Ausstellung ansehen →</a>
+  </div>
+</article>
+```
+
+  </div><!-- /.grid -->
+</section>
+
+<!-- ══════════ ABOUT ══════════ -->
+
+<section id="about">
+
+  <div class="portrait-wrap fade-in">
+    <svg class="portrait-svg" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="pg" cx="50%" cy="40%" r="55%">
+          <stop offset="0%" stop-color="#c0522e" stop-opacity="0.18"/>
+          <stop offset="100%" stop-color="#0d0d0d" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <rect width="300" height="400" fill="url(#pg)"/>
+      <circle cx="150" cy="145" r="82" fill="none" stroke="rgba(240,236,228,0.12)" stroke-width="1"/>
+      <circle cx="150" cy="145" r="50" fill="rgba(192,82,46,0.12)"/>
+      <line x1="35" y1="295" x2="265" y2="295" stroke="rgba(240,236,228,0.10)" stroke-width="0.7"/>
+      <text x="150" y="360" text-anchor="middle"
+            font-family="Space Mono, monospace" font-size="12"
+            fill="rgba(240,236,228,0.20)" letter-spacing="5">A.F.</text>
     </svg>
-    <div class="about-frame"></div>
-    <p class="about-portrait-label">Portrait / Berlin, 2024</p>
+    <div class="portrait-frame"></div>
+    <p class="portrait-label">Portrait / Berlin, 2024</p>
   </div>
-</div>
 
-<div class="about-right">
-  <div class="section-label">Über den Künstler</div>
-  <h2 class="about-heading">Andreas Fuchs</h2>
-  <p class="about-text">
-    Andreas Fuchs (*1979, Köln) lebt und arbeitet in Berlin. Seine Werke
-    bewegen sich im Spannungsfeld zwischen Malerei, Rauminstallation und
-    konzeptueller Praxis. Im Zentrum steht stets die Frage nach dem, was
-    Bilder verschweigen — nach den Lücken, Brüchen und Zwischenräumen,
-    die mehr sagen als die sichtbare Oberfläche.
-  </p>
-  <p class="about-text">
-    Seine Arbeiten wurden in über 20 Einzel- und Gruppenausstellungen in
-    Deutschland, Österreich und der Schweiz gezeigt. Er wurde u.a. mit dem
-    Villa-Massimo-Stipendium (2019) und dem Kunstpreis Nordrhein-Westfalen
-    (2021) ausgezeichnet.
-  </p>
-
-  <div class="about-stats">
-    <div>
-      <span class="stat-num" data-target="20" data-suffix="+">0+</span>
-      <span class="stat-label">Ausstellungen</span>
-    </div>
-    <div>
-      <span class="stat-num" data-target="12" data-suffix="">0</span>
-      <span class="stat-label">Länder</span>
-    </div>
-    <div>
-      <span class="stat-num" data-target="4" data-suffix="">0</span>
-      <span class="stat-label">Preise</span>
-    </div>
-  </div>
-</div>
-```
-
-  </section>
-
-  <!-- ══════════════════════════════════════
-       TIMELINE
-  ═══════════════════════════════════════ -->
-
-  <section class="timeline reveal" id="timeline">
-    <div class="section-label">Chronologie</div>
-    <h2 class="timeline-title">Ausstellungsgeschichte</h2>
-
-```
-<div class="timeline-list">
-
-  <div class="tl-item">
-    <div class="tl-year">2024</div>
-    <div class="tl-content">
-      <p class="tl-name">Leere, die spricht</p>
-      <p class="tl-place">Hamburger Bahnhof — Museum für Gegenwart, Berlin</p>
+  <div class="about-right fade-in">
+    <div class="section-label">Über den Künstler</div>
+    <h2 class="about-heading">Andreas Fuchs</h2>
+    <p class="about-text">
+      Andreas Fuchs (*1979, Köln) lebt und arbeitet in Berlin. Seine Werke bewegen sich im
+      Spannungsfeld zwischen Malerei, Rauminstallation und konzeptueller Praxis. Im Zentrum
+      steht stets die Frage nach dem, was Bilder verschweigen — nach den Lücken, Brüchen
+      und Zwischenräumen, die mehr sagen als die sichtbare Oberfläche.
+    </p>
+    <p class="about-text">
+      Seine Arbeiten wurden in über 20 Einzel- und Gruppenausstellungen in Deutschland,
+      Österreich und der Schweiz gezeigt. Er wurde u.a. mit dem Villa-Massimo-Stipendium
+      (2019) und dem Kunstpreis Nordrhein-Westfalen (2021) ausgezeichnet.
+    </p>
+    <div class="stats">
+      <div>
+        <span class="stat-num" data-target="20" data-suffix="+">20+</span>
+        <span class="stat-lbl">Ausstellungen</span>
+      </div>
+      <div>
+        <span class="stat-num" data-target="12" data-suffix="">12</span>
+        <span class="stat-lbl">Länder</span>
+      </div>
+      <div>
+        <span class="stat-num" data-target="4" data-suffix="">4</span>
+        <span class="stat-lbl">Preise</span>
+      </div>
     </div>
   </div>
 
-  <div class="tl-item">
-    <div class="tl-year">2023</div>
-    <div class="tl-content">
-      <p class="tl-name">Risse im Fundament</p>
-      <p class="tl-place">Kunsthalle Mannheim, Mannheim</p>
+</section>
+
+<!-- ══════════ TIMELINE ══════════ -->
+
+<section id="timeline">
+  <div class="section-label fade-in">Chronologie</div>
+  <h2 class="tl-heading fade-in">Ausstellungsgeschichte</h2>
+
+  <div class="tl-list">
+    <div class="tl-row">
+      <div class="tl-yr">2024</div>
+      <div><p class="tl-name">Leere, die spricht</p><p class="tl-place">Hamburger Bahnhof — Museum für Gegenwart, Berlin</p></div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-yr">2023</div>
+      <div><p class="tl-name">Risse im Fundament</p><p class="tl-place">Kunsthalle Mannheim</p></div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-yr">2023</div>
+      <div><p class="tl-name">Zwischenraum</p><p class="tl-place">Galerie König, Berlin</p></div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-yr">2022</div>
+      <div><p class="tl-name">Vertikale</p><p class="tl-place">Museum für Neue Kunst, Freiburg im Breisgau</p></div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-yr">2022</div>
+      <div><p class="tl-name">Resonanz</p><p class="tl-place">Schirn Kunsthalle, Frankfurt am Main</p></div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-yr">2020</div>
+      <div><p class="tl-name">Sediment</p><p class="tl-place">Deichtorhallen, Hamburg</p></div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-yr">2018</div>
+      <div><p class="tl-name">Ursprung — Erste Einzelausstellung</p><p class="tl-place">Galerie Eigen + Art, Leipzig</p></div>
     </div>
   </div>
+</section>
 
-  <div class="tl-item">
-    <div class="tl-year">2023</div>
-    <div class="tl-content">
-      <p class="tl-name">Zwischenraum</p>
-      <p class="tl-place">Galerie König, Berlin</p>
-    </div>
+<!-- ══════════ FOOTER ══════════ -->
+
+<footer>
+  <div class="footer-logo">FUCHS<span>.</span></div>
+  <div class="footer-info">
+    © 2024 Andreas Fuchs<br>
+    studio@andreasfuchs.art<br>
+    Berlin, Deutschland
   </div>
+</footer>
 
-  <div class="tl-item">
-    <div class="tl-year">2022</div>
-    <div class="tl-content">
-      <p class="tl-name">Vertikale</p>
-      <p class="tl-place">Museum für Neue Kunst, Freiburg im Breisgau</p>
-    </div>
-  </div>
-
-  <div class="tl-item">
-    <div class="tl-year">2022</div>
-    <div class="tl-content">
-      <p class="tl-name">Resonanz</p>
-      <p class="tl-place">Schirn Kunsthalle, Frankfurt am Main</p>
-    </div>
-  </div>
-
-  <div class="tl-item">
-    <div class="tl-year">2020</div>
-    <div class="tl-content">
-      <p class="tl-name">Sediment</p>
-      <p class="tl-place">Deichtorhallen, Hamburg</p>
-    </div>
-  </div>
-
-  <div class="tl-item">
-    <div class="tl-year">2018</div>
-    <div class="tl-content">
-      <p class="tl-name">Ursprung — Erste Einzelausstellung</p>
-      <p class="tl-place">Galerie Eigen + Art, Leipzig</p>
-    </div>
-  </div>
-
-</div><!-- /.timeline-list -->
-```
-
-  </section>
-
-  <!-- ══════════════════════════════════════
-       FOOTER
-  ═══════════════════════════════════════ -->
-
-  <footer>
-    <div class="footer-logo">FUCHS<span>.</span></div>
-    <div class="footer-info">
-      © 2024 Andreas Fuchs<br>
-      studio@andreasfuchs.art<br>
-      Berlin, Deutschland
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-
-  <script src="main.js"></script>
+<script src="main.js"></script>
 
 </body>
 </html>
